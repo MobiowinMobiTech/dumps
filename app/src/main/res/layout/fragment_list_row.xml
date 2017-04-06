@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.mobiowin.paalansocial.utils.RoundedImageView
+        android:id="@+id/img_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:layout_marginLeft="5dp"
+        app:border="true"
+        app:border_color="@color/primary"
+        app:border_width="4dp"
+        app:selector="true"
+        app:selector_color="#4403a9f4"
+        app:selector_stroke_color="@color/icons"
+        app:selector_stroke_width="4dp"
+        app:shadow="true"
+        android:src="@drawable/unknown" />
+
+    <LinearLayout
+        android:id="@+id/rlDateCircle"
+        android:orientation="vertical"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/primary_color_circle">
+
+        <com.mobiowin.paalansocial.utils.TextViewOpenSansSemiBold
+            android:id="@+id/txtDayRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginTop="-7dp"
+            android:textColor="@color/primary_text"
+            />
+        <com.mobiowin.paalansocial.utils.TextViewOpenSansRegular
+            android:id="@+id/txtDateRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/icons"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+
+        <com.mobiowin.paalansocial.utils.TextViewOpenSansRegular
+            android:id="@+id/txtPrimaryRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/primary_text"/>
+
+        <com.mobiowin.paalansocial.utils.TextViewOpenSansRegular
+            android:id="@+id/txtSecondaryRow"
+            android:layout_marginTop="-5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/secondary_text"/>
+    </LinearLayout>
+</LinearLayout>
